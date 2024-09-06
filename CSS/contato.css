@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Ropa+Sans&display=swap');
-
+/*@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Ropa+Sans&display=swap');
+*/
 * {
 margin: 0;
 padding: 0;
@@ -9,13 +9,7 @@ box-sizing: border-box;
 body {
   font-family: "Roboto Mono", monospace;
   min-height: 400px;
-  background-color: #65743A;
-}
-
-.container {
-  text-align: center;
-  padding: 20px;
-  height: auto;
+  background-image: url('../Images/f424ffd9feeb910160746bf96d1efdc2.jpg');
 }
 
 .TituloPagina {
@@ -25,28 +19,24 @@ body {
   font-size: 80px;  
 }
 
-.Texto {
+.caixa {
     text-align: center;
     color: #ffffff;
+    background-color: #65743A;
     font-family: sans-serif;
     font-size: 18px;
-    padding: 0 30%;
+    /*texto */
     margin-top: 20px;
+    border-radius: 30px;
     line-height: 1.6;
-  }
-
-  .Texto2 {
-    text-align: center;
-    color: #ffffff;
-    font-family: sans-serif;
-    font-size: 18px;
-    line-height: 1.6;
+    height: auto; 
+    margin: 2% 25% 2% 25%;   
+    padding: 2%;
+    max-width: 50%;
   }
   
   .textoTitulo{
-    color:#bdf0bd !important;
-    font-family: sans-serif;
-    font-size: 18px;
+    color:#ffffff !important;
     line-height: 1.6;
     font-weight: bold;
   }
@@ -77,27 +67,37 @@ body {
   font-size: 60px;
   font-weight: 100;
   margin-bottom: 20px;
-  
 }
+
 .container {
-    text-align: center; 
-    position: relative;
-    top: 50%;
-    background-color: #7b8d48;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-    width: 100%;
-    margin-inline: auto;
+  font-family: sans-serif;
+  text-align: center; 
+  position: relative;
+  top: 50%;
+  background-color: #7b8d48;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+  width: 100%;
+  margin-inline: auto;
 }
 
-input {
-    margin: 12px;
-    padding: 6px;
-    border-radius: 5px;
+input, textarea {
+  text-align: center;
+  padding: 4px;
+  font-family: bahnschrift;
+  color: black;
+  margin: 0 0 5px;
+  font-size: 15px;
+  border-radius: 10px;
+  width: 50%;
   }
-
+  
+  textarea{
+    width: 80%;
+    height: 120px;
+  }
 
 /* BARRA DE NAVEGAÇÃO */
 .navbar {
@@ -162,65 +162,212 @@ button {
   }
   /* BOTÃO ACABA */
 
-
-@media (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Roboto Mono", monospace;
+    min-height: 400px;
+    background-image: url('../Images/f424ffd9feeb910160746bf96d1efdc2.jpg');
+  }
+  
   .TituloPagina {
-    font-size: 40px;
+    font-family: "Agbalumo", system-ui, sans-serif;
+    color: #EFDD8D;
+    margin: 0 0 20px;
+    font-size: 80px;
   }
-
-  .SubTitulo {
-    font-size: 20px;
-  }
-
-  .Texto {
-    padding: 0 10%;
-    font-size: 16px;
-  }
-
-  .logo h1 {
-    font-size: 35px;
-  }
-
-  .navbar ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .navbar ul li {
-    padding: 8px 0;
-  }
-}
-
-
-@media (max-width: 375px) {
-  .TituloPagina {
-    font-size: 35px;
-  }
-
-  .SubTitulo {
+  
+  .caixa {
+    text-align: center;
+    color: #ffffff;
+    background-color: #65743A;
+    font-family: sans-serif;
     font-size: 18px;
-  }
-
-  .Texto {
-    padding: 0 10%;
-    font-size: 16px;
-  }
-
-  .logo h1 {
-    font-size: 30px;
-  }
-
-  .navbar ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .navbar ul li {
-    padding: 8px 0;
-  }
-
-  iframe {
-    width: 100%;
+    margin-top: 20px;
+    border-radius: 30px;
+    line-height: 1.6;
     height: auto;
+    margin: 2% 25%;
+    padding: 2%;
+    max-width: 50%;
   }
-}
+  
+  .textoTitulo {
+    color: #ffffff !important;
+    line-height: 1.6;
+    font-weight: bold;
+  }
+  
+  .SubTitulo {
+    font-family: "Jersey 15", sans-serif;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+  
+  .header {
+    width: 100%;
+    height: 110px;
+    background-color: #050404;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .logo h1 {
+    font-family: "Agbalumo", system-ui, sans-serif;
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 100;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    background-color: #7b8d48;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    width: 100%;
+    margin-inline: auto;
+  }
+  
+  input, textarea {
+    text-align: center;
+    padding: 4px;
+    font-family: bahnschrift;
+    color: black;
+    margin: 0 0 5px;
+    font-size: 15px;
+    border-radius: 10px;
+    width: 50%;
+  }
+  
+  textarea {
+    width: 80%;
+    height: 120px;
+  }
+  
+  /* BARRA DE NAVEGAÇÃO */
+  .navbar {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .navbar ul li {
+    padding: 10px 0;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+  }
+  
+  .navbar ul li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+  }
+  
+  .pagina_Inicial {
+    width: 50%;
+  }
+  
+  /* BOTÃO */
+  button {
+    padding: 17px 40px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #1d6e1d;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: #0a4a0a 0px 10px 0px 0px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    margin: 5px 0px 50px;
+  }
+  
+  button:hover {
+    box-shadow: #043604 0px 7px 0px 0px;
+  }
+  
+  button:active {
+    background-color: #49bf39;
+    box-shadow: #4caf50 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
+  }
+  
+  /* Media Query para tablets (largura até 768px) */
+  @media (max-width: 768px) {
+    .TituloPagina {
+      font-size: 60px;
+    }
+  
+    .caixa {
+      margin: 2% 10%;
+      max-width: 80%;
+    }
+  
+    input, textarea {
+      width: 70%;
+    }
+  
+    .logo h1 {
+      font-size: 50px;
+    }
+  
+    .container {
+      max-width: 90%;
+    }
+  }
+  
+  /* Media Query para smartphones (largura até 375px) */
+  @media (max-width: 375px) {
+    .TituloPagina {
+      font-size: 40px;
+    }
+  
+    .caixa {
+      margin: 2% 5%;
+      max-width: 90%;
+    }
+  
+    input, textarea {
+      width: 90%;
+    }
+  
+    .logo h1 {
+      font-size: 40px;
+    }
+  
+    button {
+      padding: 12px 30px;
+      font-size: 13px;
+    }
+  }
+  

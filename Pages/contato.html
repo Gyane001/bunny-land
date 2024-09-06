@@ -17,6 +17,11 @@
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -32,48 +37,45 @@
       <li><a href="../index.html">Home</a></li>
       <li><a href="./contato.html">Contato</a></li>
       <li><a href="./pressRealease.html">Press Realease</a></li>
-      <li><a href="#portfolio">Portfólio</a></li>
+      <li><a href="./portifolio.HTML">Portfólio</a></li>
     </ul>
   </nav>
 
 
-  <div class="Texto">
+  <div class="caixa">
     <p>Agradeço seu interesse de me contactar, segue abaixo alguns meios em que pode entrar em contato comigo e
       conversarmos sobre o projeto Bunny Land
       ou negocioar, caso tenha interesse em desenvolver outros projetos.
     </p>
     <br>
     <span class="textoTitulo"> EMAIL: </span>
-    <p class="Texto2"> Gyanegg@gmail.com</p>
+    <p class="Texto"> Gyanegg@gmail.com</p>
     <br>
     <span class="textoTitulo"> Instagram: </span>
-    <p class="Texto2"> @gyane.png </p>
+    <p class="Texto"> @gyane.png </p>
     <br>
-
 
     <div class="container">
       <h1 class="formulario">Formulário de Contato</h1>
       <form id="formularioDeContato">
-        <label for="nome">Nome Completo:</label>
+        <p>  <label for="nome">Nome Completo:</label> </p> 
         <input type="text" id="nome" name="nome" required>
-        <br>
-        <label for="email">Email para contato:</label>
+        <p> 
+        <label for="email">Email para contato:</label></p> 
         <input type="email" id="email" name="email" required>
-
-        <label for="nomeEmpresa">Nome da empresa ou organização:</label>
+        <p><label for="nomeEmpresa">Nome da empresa ou organização:</label></p>
         <input type="text" id="nomeEmpresa" name="nomeEmpresa" required>
-
-        <label for="message">Mensagem:</label>
+        <br>
+        <p><label for="message">Mensagem:</label> <br></p>
         <textarea id="message" name="message" required></textarea>
-
+        <br>
         <button type="submit">Enviar</button>
       </form>
       <div id="response"></div>
-
     </div>
 
     <br>
     <script src="../JS/scriptFormulario.js"> </script>
 </body>
-
+<p class="Texto"> GYANE GONZAGA RM: 554754</p>
 </html>
